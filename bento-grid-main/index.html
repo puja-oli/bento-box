@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bento grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  padding: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.bento-box {
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.bento-box img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+h1 span.highlight {
+  color: #facc15;
+}
+
+/* Color Variants */
+.purple {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.purple-light {
+  background-color: #ddd6fe;
+}
+
+.yellow {
+  background-color: hsl(39, 100%, 71%);
+}
+
+.light {
+  background-color: #f3f4f6;
+}
+
+/* Grid Spanning */
+.span-2 {
+  grid-column: span 2;
+}
+.span-3 {
+  grid-column: span 3;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.row-span-2 {
+  grid-row: span 2;
+}
+.row-span-1{
+  grid-row:span 1;
+}
+
+.grid-item{
+  grid-column: 2/3;
+}
+.grid-item-row{
+  grid-row:2/4;
+}
+.white{
+  background-color:  hsl(0, 0%, 100%);
+}
+.yellow-100{
+  background-color:  hsl(31, 66%, 93%);
+}
+.bg-yellow-100-purple{
+  color: hsl(256, 67%, 59%);
+}
+
+.h2-box{
+  grid-area: 1/1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .span-2, .span-3 {
+    grid-column: span 1;
+  }
+
+  h1, h2 {
+    font-size: 1.25rem;
+  }
+  .grid-item{
+  grid-column: span 1;
+}
+
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <main class="grid-container">
+
+   
+    <div class="bento-box purple span-2 h1-box">
+    
+      <h1>Social Media <span class="highlight">10x</span> <i>Faster</i> with AI</h1>
+      <img src="assets/images/illustration-five-stars.webp" alt="5 stars" />
+      <p>Over 4,000 5-star reviews</p>
+    </div>
+
+    <div class="bento-box yellow-100 row-span-1 h2-box">
+      <h2>Create and schedule content <span class="bg-yellow-100-purple">quicker</span>.</h2>
+      <img src="assets/images/illustration-create-post.webp" alt="Create post" />
+    </div>
+
+    <div class="bento-box purple-light row-span-2 span-">
+      <h2>Schedule to social media.</h2>
+      <img src="assets/images/illustration-schedule-posts.webp" alt="Best time to post" />
+      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+
+    <div class="bento-box white grid-item  span-">
+      <img src="assets/images/illustration-multiple-platforms.webp" alt="Multiple Platforms" />
+      <h2>Manage multiple accounts and platforms.</h2>
+    </div>
+
+  
+
+    <div class="bento-box yellow span-">
+      <h2>Maintain a consistent posting schedule.</h2>
+      <img src="assets/images/illustration-consistent-schedule.webp" alt="Schedule" />
+    </div>
+
+    <div class="bento-box yellow grid-item-row row-span-2">
+      <h2>Write your content using AI.</h2>
+      <img src="assets/images/illustration-ai-content.webp" alt="AI content" />
+    </div>
+
+    <div class="bento-box light span-">
+      <h2>>56% faster audience growth.</h2>
+      <img src="assets/images/illustration-audience-growth.webp" alt="Audience growth" />
+    </div>
+
+
+    <div class="bento-box purple span-2">
+      <h2>Grow followers with non-stop content.</h2>
+      <img src="assets/images/illustration-grow-followers.webp" alt="Grow followers" />
+    </div>
+
+    
+   
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">puja oli</a>.
+  </footer>
+</body>
+</html>
