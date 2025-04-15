@@ -1,3 +1,5 @@
+
+
 # Frontend Mentor - Bento grid solution
 
 This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -16,84 +18,58 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+### Overview
 
+-This project is a solution to the Bento grid challenge on Frontend Mentor. The goal was to build a responsive layout using modern HTML and CSS techniques that adapts smoothly to various screen sizes. The design is inspired by the Bento grid layout style, which neatly organizes content into visually appealing sections.
 
-## Overview
-This project is a solution to the Bento grid challenge on Frontend Mentor. The goal was to build a responsive layout using modern HTML and CSS techniques that adapts smoothly to various screen sizes. The design is inspired by the Bento grid layout style, which neatly organizes content into visually appealing sections.
-
-By completing this challenge, I practiced creating flexible and adaptive UI designs using CSS Grid and Flexbox, while maintaining a clean and semantic HTML structure.
-
-
+-By completing this challenge, I practiced creating flexible and adaptive UI designs using CSS Grid and Flexbox, while maintaining a clean and semantic HTML structure.
 
 ### The challenge
 
 Users should be able to:
-
-View the optimal layout for the interface depending on their device's screen size
-
-See the content neatly arranged in a responsive grid system
-
-Experience smooth transitions between mobile, tablet, and desktop views
-
-Access a layout that follows the Bento-style design with aesthetic and usability in mind
-
+- View the optimal layout for the interface depending on their device's screen size
+- See the content neatly arranged in a responsive grid system
+- Experience smooth transitions between mobile, tablet, and desktop views
+- Access a layout that follows the Bento-style design with aesthetic and usability in mind
 
 ### Screenshot
-
-![](./screenshot.png)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot of the Bento Grid Layout](./screenshot.png)
 
 ### Links
+- Solution URL: [https://github.com/puja-oli/bento-box](https://github.com/puja-oli/bento-box)
+- Live Site URL: [https://puja-oli.github.io/bento-box/](https://puja-oli.github.io/bento-box/)
 
-- Solution URL: https://github.com/puja-oli/bento-box
-- Live Site URL: https://puja-oli.github.io/bento-box/
+### My process
 
-## My process
-Built with
-Semantic HTML5 for the basic structure of the page.
+Built with:
+- Semantic HTML5 for the basic structure of the page.
+- CSS Grid to create the responsive bento grid layout.
+- Flexbox for aligning and distributing content within the grid cells.
+- Mobile-first workflow to ensure the layout looks great on mobile devices first, then adjust for larger screens.
+- Git and GitHub for version control and sharing the project with others.
 
-CSS Grid to create the responsive bento grid layout.
-
-Flexbox for aligning and distributing content within the grid cells.
-
-Mobile-first workflow to ensure the layout looks great on mobile devices first, then adjust for larger screens.
-
-Git and GitHub for version control and sharing the project with others.
-
-### Built with
-
+## Built with
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 
-
-### What I learned
+## What I learned
 
 During this project, I learned a lot about the following:
-
-Responsive design: Using CSS Grid and Flexbox to ensure the layout adapts seamlessly to different screen sizes, especially the transition between desktop and mobile views.
-
-Grid layout: I became more proficient in using CSS Grid for complex layouts like the Bento grid.
-
-Flexibility in design tools: While designing for different breakpoints, I practiced responsive techniques with CSS.
+- **Responsive design**: Using CSS Grid and Flexbox to ensure the layout adapts seamlessly to different screen sizes, especially the transition between desktop and mobile views.
+- **Grid layout**: I became more proficient in using CSS Grid for complex layouts like the Bento grid.
+- **Flexibility in design tools**: While designing for different breakpoints, I practiced responsive techniques with CSS.
 
 Here’s an example of something I learned:
 
-html
-
+```html
 <div class="bento-grid">
   <div class="grid-item">Item 1</div>
   <div class="grid-item">Item 2</div>
 </div>
+
 
 
 ```css
@@ -103,16 +79,11 @@ html
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-Continued development
-In the future, I plan to focus on:
-
-Enhancing accessibility (ARIA roles and landmarks)
-
-Further improving performance and optimizations for mobile users
+```
 
 ### Continued development
 
-n future projects, I want to continue improving in the following areas:
+ future projects, I want to continue improving in the following areas:
 
 CSS Grid & Flexbox: While I've gained a solid understanding of CSS Grid and Flexbox, I want to refine my skills by experimenting with more complex layouts and learning how to seamlessly combine both techniques.
 
